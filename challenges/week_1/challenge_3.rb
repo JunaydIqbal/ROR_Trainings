@@ -11,8 +11,9 @@
 
 def index_filter(array, str)
     temp_str = ""
-
-    if array.length > 0 && str != ''
+    #print array.length
+    if array.length >= 0 || str != ''
+        
         array.each do |i|
             begin
                 if i >= 0 || i < 0
@@ -29,7 +30,7 @@ def index_filter(array, str)
     temp_str.downcase
 end
 
-array = [9, -9, 2, 27, 36, nil, 6, 13, -1, 2, 0, 30, 2]
+array = [9, -9, 2, 27, 36, [], 6, 13, -1, 2, 0, 30, 2]
 str = "That's life, I've got you under my skin"
 
-print index_filter(array, str)
+print index_filter([], str)

@@ -13,6 +13,7 @@ def common_elements(array1, array2)
              temp_array.push(array1.find {|num| num == i})
        end
     end
+    #print temp_array
     temp_array - [nil]
 end
 
