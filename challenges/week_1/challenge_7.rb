@@ -54,13 +54,18 @@ def total_sales(array, product)
     sum = 0
     count = 0
     if check_product >= 0
-        array.length.times do |i|
-            if i > 0
-                #puts i
-                #print array[check_product][i]
-                sum += array[i][check_product].to_i
-            end
+        i = 1
+        while i < array.length do
+            sum += array[i][check_product].to_i
+            i += 1
         end
+        # array.length.times do |i|
+        #     if i > 0
+        #         #puts i
+        #         #print array[check_product][i]
+        #         sum += array[i][check_product].to_i
+        #     end
+        # end
         return sum
     end
 
@@ -75,4 +80,4 @@ array = [
     [ 4 ,  5 ,  5 ]
   ]
 
-print total_sales(array, "B")
+puts total_sales(array, "B")
