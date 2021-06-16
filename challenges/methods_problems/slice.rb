@@ -1,4 +1,4 @@
-# Problem: if word is matched with array so slice the string 
+# Problem 1: if word is matched with array so slice the string 
 
 
 names_array = ["junaid", "moiz", "arslan", "noman"]
