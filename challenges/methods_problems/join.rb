@@ -1,4 +1,4 @@
-#Problem: string convert to array and back to string
+#Problem 1: string convert to array and back to string
 
 str = "Hello i am junaid iqbal"
 array = []

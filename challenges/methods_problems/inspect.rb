@@ -1,5 +1,5 @@
 #Problem:
-#aliases of to_s
+#aliases of to_s and diff is that inspect is always convert to string and string will be in string
 def apocalyptic(num)
     index_string = (2**num).to_s
     msg = "Crisis averted. Resume sinning."
