@@ -1,4 +1,4 @@
-#Problem: 2 students attempt exam and shuffle the questions
+#Problem 1: 2 students attempt exam and shuffle the questions
 
 
 question = ["What is your name?", "How are you?", "How old are you?", "Are you single?"]
