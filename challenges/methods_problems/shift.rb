@@ -1,4 +1,4 @@
-#Problem: if user enter manually @gmail.com so remove it from string and if number 
+#Problem 1: if user enter manually @gmail.com so remove it from string and if number 
 # emails limit upto 3 so remove first username
 
 
