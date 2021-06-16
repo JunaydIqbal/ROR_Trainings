@@ -1,4 +1,4 @@
-# Problem: Seperate +ve and -ve elements in array
+# Problem 1: Seperate +ve and -ve elements in array
 
 array = [2, -2, 6, 4, -1, 3, -4, 1]
 positive_array = []
