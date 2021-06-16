@@ -1,3 +1,5 @@
+#Problem:
+#aliases of to_s
 def apocalyptic(num)
     index_string = (2**num).to_s
     msg = "Crisis averted. Resume sinning."
