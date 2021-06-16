@@ -9,7 +9,7 @@
 
 
 
-#problem 2: if repeated case in hash values then
+#problem 2:: if repeated case in hash values then
 
 # hash = {name: "junaid", home_phone: 22352, work_phone: 22352}
 
