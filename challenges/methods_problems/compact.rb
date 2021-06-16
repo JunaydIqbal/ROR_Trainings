@@ -1,4 +1,4 @@
-#Problem: Partition the string according to user size
+#Problem 1: Partition the string according to user size
 
 def partition(str, partition_size)
     part = []
