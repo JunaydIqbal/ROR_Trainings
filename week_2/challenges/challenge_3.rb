@@ -45,4 +45,5 @@ end
 
 msg = "Matt MacPherson"
 key = "abcdefghijklmnopqrstuvwxyz"
-puts mirror_cipher(msg, key)
+encrypt = mirror_cipher(msg, key)
+puts encrypt
