@@ -1,4 +1,4 @@
-
+#problem
 # Create a function that checks if a given integer is exactly the factorial of an integer or not. true if it is, false otherwise.
 # Examples
 # is_factorial(2) ➞ true
