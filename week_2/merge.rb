@@ -1,4 +1,4 @@
-#Problem 1: 3 students in class so merge the assignenmts with total marks
+#Problem1: 3 students in class so merge the assignenmts with total marks
 
 std_1 = {ass1: 12, ass2: 42, ass3: 36, ass4: 41}
 std_2 = {ass11: 10, ass22: 15, ass33: 39, ass44: 43}
