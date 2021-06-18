@@ -1,27 +1,29 @@
 #Problem 1: encrypt the message
-hacker_speak = ->(str){
-    (str.length).times do |i|
-        case str[i]
-        when 'a'
-            str[i]='4'
-        when 'e'
-            str[i]='3'
+# hacker_speak = ->(str){
+#     (str.length).times do |i|
+#         case str[i]
+#         when 'a'
+#             str[i]='4'
+#         when 'e'
+#             str[i]='3'
             
-        when 'i'
-            str[i]='1'
+#         when 'i'
+#             str[i]='1'
             
-        when 'o'
-            str[i]='0'
+#         when 'o'
+#             str[i]='0'
             
-        when 's'
-            str[i]='5'
-        end
-    end
-    return str
-}
+#         when 's'
+#             str[i]='5'
+#         end
+#     end
+#     return str
+# }
 
-print hacker_speak.call("javascript is cool")
-
+# print hacker_speak.call("javascript is cool")
+# hacker_speak.()
+# hacker_speak[]
+# hacker_speak.===
 
 
 #Problem 2: 

@@ -8,31 +8,31 @@
 #problem 2: an array has student marks of his/her asignments, and teacher want to increase the number of assignment 
 # and sum all the numbers to pass the student
 
-# marks = [10,12,14,15]
-# puts "Assignments: "
-# marks.length.times do |i|
-#     print "Assignment No. ", i+1, ": ", marks[i], "\n"
-# end
-# print "Enter assignment number to change marks: "
-# ass_no = gets.chomp.to_i
+marks = [10,12,14,15]
+puts "Assignments: "
+marks.length.times do |i|
+    print "Assignment No. ", i+1, ": ", marks[i], "\n"
+end
+print "Enter assignment number to change marks: "
+ass_no = gets.chomp.to_i
 
-# print "Enter marks of ", ass_no, ": "
-# new_marks = gets.chomp.to_i
+print "Enter marks of ", ass_no, ": "
+new_marks = gets.chomp.to_i
 
-# marks[ass_no - 1] = new_marks
-# sum = marks.inject(0){|sum, each_marks| sum += each_marks}
-# if sum < 50
-#     #print marks
-#     print "Enter extra marks to pass the student: "
-#     extra_marks = gets.chomp.to_i
-#     sum = marks.inject(extra_marks){|sum, each_marks| sum += each_marks}
-#     print "Total marks: ", summ "\n"
+marks[ass_no - 1] = new_marks
+sum = marks.inject(0){|sum, each_marks| sum += each_marks}
+if sum < 50
+    #print marks
+    print "Enter extra marks to pass the student: "
+    extra_marks = gets.chomp.to_i
+    sum = marks.inject(extra_marks){|sum, each_marks| sum += each_marks}
+    print "Total marks: ", summ "\n"
     
-#     print sum > 50 ? "Passed\n" : "Still Fail\n"
-# else
-#     print "Total marks: ", sum, "\n"
+    print sum > 50 ? "Passed\n" : "Still Fail\n"
+else
+    print "Total marks: ", sum, "\n"
 
-# end
+end
 
 
 

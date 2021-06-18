@@ -100,6 +100,7 @@ puts "Today no. of weeks to born: #{total_no_of_weeks}"
 
 
 
+
 # d = DateTime.new(birth_year, birth_month, birth_date)
 # puts d.strftime("%m/%d/%Y").class
 # puts DateTime.strptime('2021 04 6 04 05 06 +7', '%Y %U %w %H %M %S %z')

@@ -25,5 +25,5 @@ def is_factorial(num)
     false
 end
 
-check_factorial = is_factorial(24)
+check_factorial = is_factorial(1)
 puts check_factorial

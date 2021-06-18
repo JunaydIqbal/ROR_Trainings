@@ -29,5 +29,5 @@ def sock_pairs(socks)
     count_pairs
 end
 
-total_pairs = sock_pairs("ABABC")
+total_pairs = sock_pairs("AAABBDDC")
 puts total_pairs

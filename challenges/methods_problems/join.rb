@@ -1,6 +1,6 @@
 #Problem 1: string convert to array and back to string
 
-str = "Hello i am junaid iqbal"
+str = "Hello i am junaid iqbal moiz is my"
 array = []
 
 array.push(str.split(' '))
