@@ -1,4 +1,4 @@
-#Problem 1: encrypt the message
+#Problem 1 (Lambdas): encrypt the message
 # hacker_speak = ->(str){
 #     (str.length).times do |i|
 #         case str[i]
@@ -26,7 +26,7 @@
 # hacker_speak.===
 
 
-#Problem 2: 
+#Problem 2(Procs problem):  
 # dice_game = Proc.new{ |array|
 #     sum = 0
 #     array.each do |x, y|
@@ -44,7 +44,7 @@
 # print result
 
 
-#Problem 3: Sum of even numbers
+#Problem 3 (Procs): Sum of even numbers
 # sum_of_evens = Proc.new{|array|
 #     sum = 0
 #     array.each do |x|
