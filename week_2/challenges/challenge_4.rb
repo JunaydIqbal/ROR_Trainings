@@ -69,7 +69,7 @@ def find_col(array, ch)
     -1
 end
 
-def convert_ciphertext(word, key)
+def convert_ciphertext(word, key = ([*('a'..'z')].join))
     if word != "" && key != ""
         draw_table = lookup_table
         word.downcase!
@@ -110,7 +110,7 @@ def convert_ciphertext(word, key)
     "Invalid Inputs, check you word or key\n"
 end
 
-puts convert_ciphertext("ATTACKATDAWN", "LEMON")
+puts convert_ciphertext("MOIZ")
 
 
 
