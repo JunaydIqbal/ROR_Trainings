@@ -8,3 +8,8 @@ class Dog < Animal
     end
 end
 
+class Cow < Animal
+    def initialize(var = 'ban ban')
+        @noise = var
+    end
+end
