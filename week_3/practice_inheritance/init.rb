@@ -5,3 +5,5 @@ require_relative 'libs/animal'
 
  cow = Cow.new('bannnn bannn ')
  puts cow.noise
+
+ cow.sound
