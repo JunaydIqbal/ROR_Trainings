@@ -1,4 +1,4 @@
-require_relative 'classes/dice'
+require_relative 'class/dice'
 
 #person = Person.new
 # puts person.say_hello
@@ -16,23 +16,27 @@ require_relative 'classes/dice'
 
 # puts person.full_name
 dice = Dice.new
-3.times {
+i = 0
+while i < 3 do
     puts "Enter number: "
     num = gets.chomp.to_i
-    dice.person_1_try
+    dice.set_person_1(num)
     dice.person_2_try
-    if dice.win_person(dice.get_person_1, dice.get_person_2) == 0
+    dice.random_generate
+    check = dice.win_person
+    puts check
+    if check == 0
         puts "Match end, player 1 win"
         break
-    elsif dice.win_person(dice.get_person_1, dice.get_person_2) == 1
+    elsif check == 1
         puts "Match end, player 2 win"
         break
     else
         if i == 3
-            puts "Match end, Draw the match"
+            puts "Matched, Draw the match"
             break
         else
             puts "Match is continued!"
         end
     end
-}
+end

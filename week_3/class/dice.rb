@@ -2,14 +2,15 @@ class Dice
     private
     attr_accessor :p1, :p2
     public
-    def person_1_try
-        ran = rand(6) + 1
-        set_person_1(ran)
-    end
 
     def person_2_try
-        ran = rand(6) + 1
+        ran = rand(10) + 1
         set_person_2(ran)
+    end
+
+    def random_generate
+        ran = rand(10) + 1
+        ran
     end
 
     def set_person_1(ran)
@@ -28,10 +29,11 @@ class Dice
         @p2
     end
 
-    def win_person(p1, p2)
-        if p1 == get_person_1
+    def win_person()
+        check = random_generate
+        if get_person_1 == check
             return 0
-        elsif p2 == get_person_2
+        elsif get_person_2 == check
             return 1
         else
             return -1
