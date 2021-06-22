@@ -1,4 +1,4 @@
-require_relative 'class/dice'
+require_relative 'libs/dice'
 
 #person = Person.new
 # puts person.say_hello
