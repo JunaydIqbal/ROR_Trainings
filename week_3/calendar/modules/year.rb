@@ -16,7 +16,7 @@ module Year
     split_year
   end
 
-  def initialize_year(entered_year, months_iterate, days_iterate)
+  def initiate_year(entered_year, months_iterate, days_iterate)
     DateTime.new(entered_year, months_iterate, days_iterate)
   end
 
