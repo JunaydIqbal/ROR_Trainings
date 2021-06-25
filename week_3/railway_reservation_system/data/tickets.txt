@@ -1,0 +1,10 @@
+moiz | Multan Express | | Multan - Karachi
+moiz khan | Multan Express | | Multan - Karachi
+Allama Iqbal | Karachi Express | | Lahore - Karachi
+Arslan | Islamabad Express | | Islamabad - Lahore
+Hamza | Karakhom Express | | Peshawar - Karachi
+Salman | Karachi Express | | Lahore - Karachi
+salman khan | China Express | | Khunjrab Pass - Lahore
+shani | China Express | | Khunjrab Pass - Lahore
+junaid khan | China Express | | Khunjrab Pass - Lahore
+bilal | China Express | | Khunjrab Pass - Lahore
