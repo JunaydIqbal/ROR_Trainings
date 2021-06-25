@@ -1,3 +1,4 @@
+#module validation
 module Validation
   def valid_inputs
     print "\nEnter the year (2 or 4 digits format i.e. 2021, 20 etc.): "
