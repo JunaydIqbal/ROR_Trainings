@@ -27,7 +27,7 @@ def main_menu
     phone_no = customer_values[1]
     cnic = customer_values[2]
     cust_obj = Customer.new(username, phone_no, cnic)
-    train_obj = Train.new
+    Train.display_all_trains
     seat_obj = Seat.new
     puts "Enter train name to booked: "
     train_name = gets.chomp
@@ -39,8 +39,7 @@ def main_menu
     end
     #main_menu
   elsif ch == "2"
-    cust_obj = Customer.new
-    cust_obj.get_customer_data
+    Customer.get_customer_data
     #main_menu
   elsif ch == "3"
     puts "Enter train name: "
@@ -52,8 +51,7 @@ def main_menu
     train_obj = Train.new(train_name, start_point, end_point)
     #main_menu
   elsif ch == "4"
-    seat_obj = Seat.new
-    seat_obj.show_ticket
+    Seat.show_ticket
     #main_menu
   elsif ch == "5"
     print ("\n\n\t*Functionality comming soon\n\n")

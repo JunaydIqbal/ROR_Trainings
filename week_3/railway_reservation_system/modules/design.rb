@@ -16,6 +16,7 @@ module Design
         if check_numeric.include?(num)
           check = true
         else
+          puts "\n  * Entered Phone# is incorrect\n"
           check = false
           break
         end
@@ -34,6 +35,7 @@ module Design
         if check_numeric.include?(num)
           check = true
         else
+          puts "\n  * Entered CNIC is incorrect\n"
           check = false
           break
         end

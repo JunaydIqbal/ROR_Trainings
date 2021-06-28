@@ -107,23 +107,23 @@ class Seat
         puts "\n*** Seats Data stored successfully ***\n\n"
 
       rescue
-        puts "\n*** Seats Data didn't stored, due to file error ***\n\n"
+        puts "\n*** Seats Data didn't store, due to file error ***\n\n"
       end
     end
 
     def update_record(train_data, train_name)
       all_record = fetch_seats_data(train_name)
-      print all_record
+      #print all_record
       begin
         file = File.new("/home/traveller/Challenges Week 1/GitHub/week_3/railway_reservation_system/data/seats.txt", "w")
         all_record.each do |name, total_seats|
-          puts name
+          #puts name
           file.print(name, " | ", total_seats, "\n")
         end
         file.print(train_data[0], " | ", train_data[1], "\n")
         puts "\n*** Updated successfully ***\n\n"
       rescue
-        puts "\n*** Seats Data didn't updated, due to file error ***\n\n"
+        puts "\n*** Seats Data didn't update, due to file error ***\n\n"
       end
     end
 
@@ -138,7 +138,7 @@ class Seat
       end
     end
 
-    def fetch_tickets
+    def self.fetch_tickets
       all_record = []
       check = false
       begin
@@ -253,8 +253,8 @@ class Seat
       return false
     end
 
-    def show_ticket
-      ticket_data = self.fetch_tickets
+    def self.show_ticket
+      ticket_data = fetch_tickets
       if ticket_data != nil
         print("\n\n\t* Registered Tickets\n\n")
         ticket_data.each do |i|

@@ -3,14 +3,10 @@ require_relative '/home/traveller/Challenges Week 1/GitHub/week_3/railway_reserv
 
 class Train
 
-  def initialize(name = "", route_start = "", route_end = "")
-    if name == "" && route_start == "" && route_end == ""
-      display_all_trains
-    else
-      @@train_name =  name
-      @@assign_route = Route.new(route_start, route_end)
-      store_data
-    end
+  def initialize(name, route_start, route_end)
+    @@train_name =  name
+    @@assign_route = Route.new(route_start, route_end)
+    store_data
   end
 
   private
@@ -55,7 +51,7 @@ class Train
       end
     end
 
-    def fetch_data
+    def self.fetch_data
       all_record = []
       check = false
       begin
@@ -80,16 +76,16 @@ class Train
 
   public
     
-    def display_all_trains
+    def self.display_all_trains
       puts "\n\n\t\t*All trains data\n"
-      all_data = self.fetch_data
+      all_data = fetch_data
       all_data.each do |i|
         puts i
       end
     end
 
     def assign_route(train_name, route_start = "", route_end = "")
-      all_data = self.fetch_data
+      all_data = fetch_data
       @@assign_route.set_route(route_start, route_end)
       self.update_data
     end

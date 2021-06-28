@@ -2,7 +2,7 @@ class Customer
 
   attr_accessor :user_name, :phone_no, :cnic
   
-  def initialize(name = "", phone = "", cnic_no = "")
+  def initialize(name, phone, cnic_no)
     self.user_name = name
     self.phone_no = phone
     self.cnic = cnic_no
@@ -10,7 +10,7 @@ class Customer
   
   private
 
-    def fetch_data
+    def self.fetch_data
       all_record = []
       check = false
       begin
@@ -39,15 +39,15 @@ class Customer
         file = File.new("/home/traveller/Challenges Week 1/GitHub/week_3/railway_reservation_system/data/customer.txt", "a")
         file.print(user_name, " | ", phone_no , " | ", cnic, "\n")
         file.close
-        puts "\n*** Data insert successfully ***\n\n"
+        puts "\n*** Data inserted successfully ***\n\n"
 
       rescue
-        puts "\n*** Data didn't insert successfully, due to file error ***\n\n"
+        puts "\n*** Unable to insert data due to file error ***\n\n"
         file.close
       end
     end
 
-    def get_customer_data
+    def self.get_customer_data
       cust_data = fetch_data
       if cust_data != nil
         count = 1
