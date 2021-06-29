@@ -1,0 +1,4 @@
+97 | 100 | none
+100 | 42 | none
+94 | 200 | Preparing
+69 | 200 | Ready
