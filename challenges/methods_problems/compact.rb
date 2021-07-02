@@ -1,4 +1,4 @@
-
+#Problem 1: Partition the string according to user size
 
 def partition(str, partition_size)
     part = []
@@ -13,5 +13,4 @@ def partition(str, partition_size)
     part.compact!
 end
 
-print partition("c+++", 2)
-
+print partition("junaid", 4)
