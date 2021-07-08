@@ -55,7 +55,7 @@ end
 month = ""
 sum = 0
 stock = Hash.new
-(0..10).step(2) do |i|
+(0...stock_data.length).step(2) do |i|
   month = stock_data.keys[i].to_s + " to " + stock_data.keys[i+1].to_s
   stock[month] = sum_items(convert_to_hash(stock_data[stock_data.keys[i]]), convert_to_hash(stock_data[stock_data.keys[i+1]]))
 end
